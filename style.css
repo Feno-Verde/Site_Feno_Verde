@@ -1,0 +1,84 @@
+body {
+    background-color: beige;
+}
+
+header {
+    background-image: url('img/field.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.8rem
+}
+
+.textbutton {
+    font-size: 1.3rem
+}
+
+.calendarimage {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 20px;
+}
+
+.imgcover {
+      border-radius: 1rem;
+      object-fit: cover;
+      width: 100px;
+      height: 100px;
+    }
+
+@media (max-width: 768px) {
+    body {
+        height: 60vh;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem
+    }
+
+    .textbutton {
+        font-size: 1rem
+    }
+
+    .calendarimage {
+        margin-left: 7px;
+        margin-bottom: 2.5px;
+        width: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        height: 60vh;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem
+    }
+
+    .textbutton {
+        font-size: 0.7rem
+    }
+
+    .calendarimage {
+        margin-left: 6px;
+        margin-bottom: 1px;
+        width: 15px;
+    }
+}
