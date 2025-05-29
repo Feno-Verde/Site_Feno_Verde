@@ -1,7 +1,6 @@
 body {
     background-color: beige;
     scroll-behavior: smooth;
-
 }
 
 header {
@@ -14,7 +13,6 @@ header {
 
 .title {
     font-size: 3rem;
-    
     color: #009300;
 
     font-family: "Outfit", sans-serif;
@@ -74,12 +72,19 @@ header {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
 .text_subtitle {
     font-size: 2rem;
     font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text_footer {
+    font-size: 1.18rem;
+
+    font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -179,7 +184,11 @@ header {
 }
 
 
-
+.map {
+    border: 0;
+    width: 600px;
+    height: 250px;
+}
 
 
 @media (max-width: 768px) {
@@ -218,6 +227,14 @@ header {
         font-size: 1.5rem;
     }
 
+    .text_footer {
+        font-size: 1rem;
+
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
     .checkimage {
         width: 40px;
         margin-left: 30px;
@@ -227,6 +244,16 @@ header {
     .offcanvas-start {
         width: 250px !important;
     }
+
+    .logoimage {
+        width: 200px;
+    }
+
+    .map {
+        width: 450px;
+        height: 150px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -265,8 +292,26 @@ header {
         font-size: 1rem;
     }
 
+    .text_footer {
+        font-size: 0.75rem;
+
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
     .checkimage {
         width: 40px;
         margin-left: 30px;
     }
+
+    .logoimage {
+        width: 100px;
+    }
+
+    .map {
+        width: 300px;
+        height: 100px;
+    }
+
 }
