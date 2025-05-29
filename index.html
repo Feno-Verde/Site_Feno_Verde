@@ -40,7 +40,9 @@
             </div>
         </button>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+
+        <div class="offcanvas offcanvas-start d-flex flex-column" tabindex="-1" id="sidebarMenu"
+            aria-labelledby="sidebarMenuLabel">
             <div class="offcanvas-header pb-0">
                 <h5 class="offcanvas-title" id="sidebarMenuLabel" style="margin-left: 40px;">Menu</h5>
                 <img src="img/text_feno_verde.png" class="img-fluid position-absolute translate-e end-0 me-4 mt-3"
@@ -48,30 +50,59 @@
 
             </div>
             <hr>
-            <div class="offcanvas-body pt-0">
+            <div class="offcanvas-body pt-0 flex-grow-1">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#WhoAre">Quem somos</a>
+                        <a class="nav-link" href="#WhoAre">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Services">Produtos e Serviços</a>
+                        <a class="nav-link" href="#Services">Nossos Valores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://encurtador.com.br/HnVM1">Fale Conosco</a>
                     </li>
                 </ul>
             </div>
+            <footer class="offcanvas-footer px-3 py-3">
+                <div class="text-white" style="background-color: #033919;">
+                    <div class="container-fluid px-0 text-break ">
+                        <div class="row justify-content-center">
+
+                            <div class="col-3">
+                                <a href="https://www.facebook.com/profile.php?id=61560486945375&mibextid=ZbWKwL">
+                                    <img src="img/facebook-icon.png" class="nav_icons">
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="https://www.instagram.com/FENOVERDELTDA">
+                                    <img src="img/instagram-icon.png" class="nav_icons">
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="https://www.facebook.com/profile.php?id=61560486945375&mibextid=ZbWKwL">
+                                    <img src="img/youtube-icon.png" class="nav_icons">
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </footer>
         </div>
     </nav>
 
     <!-- Tela Inicial -->
     <header id="Home">
-        <div class="container text-center d-flex align-items-center justify-content-center h-75 p-4 p-md-0 ">
+        <div class="container text-center d-flex align-items-center justify-content-center h-75 p-4 p-md-3 ">
             <div class="row text-center flex-column mt-5">
-                <div class="col-12 mt-5">
+                <div class="col-12 mb-3">
                     <img src="img/logo.png" alt="Logo" class="logoimage">
                 </div>
                 <div class="col">
@@ -220,11 +251,12 @@
     <!-- Mapa -->
     <section data-aos="fade-up">
         <div class="container justify-content-center d-flex mb-5 my-5">
-            <div class="col-6">
+            <div class="col-8">
                 <div class="ratio ratio-16x9">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.708080151084!2d-47.34110502535122!3d-23.217306879037782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf517c7680b097%3A0x5a3ae8b6f6256648!2sEstr.%20Sete%20Quedas%2C%20111%20-%20Haras%20Paineiras%2C%20Salto%20-%20SP%2C%2013323-763!5e0!3m2!1spt-BR!2sbr!4v1748445601234!5m2!1spt-BR!2sbr"
-                        style="border-radius: 30px; box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        style="border-radius: 30px; box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
@@ -242,27 +274,34 @@
 
                     <!-- Coluna 1: Logo -->
                     <div class="col-12 col-md-4 mx-auto mt-3 text-center">
-                        <img src="img/logo.png" class="img-fluid" style="width: 150px;">
+                        <img src="img/logo.png" class="logoimg_footer">
                     </div>
 
                     <!-- Coluna 2: Links rápidos -->
                     <div class="col-12 col-md-4 mx-auto mt-3">
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-success">Menu</h5>
-                        <ul>
-                            <li><a href="#Home" class="text-white text-decoration-none">Home</a></li>
-                            <li><a href="#WhoAre" class="text-white text-decoration-none">Quem somos</a></li>
-                            <li><a href="#Services" class="text-white text-decoration-none">Serviços</a></li>
-                            <li><a href="#Contact" class="text-white text-decoration-none">Fale Conosco</a></li>
+                        <h5 class="text-uppercase mb-1 font-weight-bold text-success">Menu</h5>
+                        <ul class="list_footer ps-0">
+                            <li><a href="#Home" class="text-white text-decoration-none text_footer">Home</a></li>
+                            <li><a href="#WhoAre" class="text-white text-decoration-none text_footer">Quem somos</a>
+                            </li>
+                            <li><a href="#Services" class="text-white text-decoration-none text_footer">Valores</a></li>
+                            <li><a href="https://encurtador.com.br/HnVM1"
+                                    class="text-white text-decoration-none text_footer">Fale Conosco</a></li>
                         </ul>
 
                     </div>
 
                     <!-- Coluna 3: Contato -->
                     <div class="col-12 col-md-4 mx-auto mt-3">
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-success">Contato</h5>
-                        <p><i class="bi bi-house-door-fill me-2"></i> Av. Sete Quedas</p>
-                        <p><i class="bi bi-envelope-fill me-2"></i> fenoverdepresecados@gmail.com</p>
-                        <p><i class="bi bi-telephone-fill me-2"></i> (11) 95540-0294</p>
+                        <h5 class="text-uppercase mb-1 font-weight-bold text-success">Contato</h5>
+                        <ul class="list_footer ps-0">
+                            <li class="text-white text-decoration-none text_footer2">Av. Sete Quedas</a></li>
+                            <li class="text-white text-decoration-none text_footer2">fenoverdepresecados@gmail.com</a>
+                            </li>
+                            <li class="text-white text-decoration-none text_footer2">(11) 95540-0294</a></li>
+                        </ul>
+
+
                     </div>
 
                 </div>

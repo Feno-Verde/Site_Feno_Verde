@@ -1,14 +1,14 @@
 body {
-    background-color: beige;
+    background-color: #f5f5dc;
     scroll-behavior: smooth;
 }
 
 header {
-    background-image: url('img/field.jpg');
+    background-image: url('img/field2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 95vh;
+    height: 106vh;
 }
 
 .title {
@@ -48,7 +48,7 @@ header {
 }
 
 .logoimage {
-    width: 300px;
+    width: 250px;
 }
 
 .imgcover {
@@ -82,11 +82,23 @@ header {
 }
 
 .text_footer {
-    font-size: 1.18rem;
+    font-size: 1rem;
 
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.text_footer2 {
+     font-size: 1rem;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text_footer:hover {
+    zoom: 120%;
 }
 
 .checkimage {
@@ -183,19 +195,26 @@ header {
     color: #ffffff;
 }
 
-
-.map {
-    border: 0;
-    width: 600px;
-    height: 250px;
+.list_footer {
+    list-style: none;
 }
 
+.logoimg_footer {
+    width: 120px;
+}
+.nav_icons {
+    width: 30px;
+}
+.nav_icons:hover {
+    zoom: 110%;
+}
 
 @media (max-width: 768px) {
-    header {
-        height: 60vh;
-    }
 
+    .margin_home {
+        margin-top: 3rem;
+    }
+   
     .title {
         font-size: 2.25rem;
     }
@@ -227,14 +246,6 @@ header {
         font-size: 1.5rem;
     }
 
-    .text_footer {
-        font-size: 1rem;
-
-        font-family: "Outfit", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
-
     .checkimage {
         width: 40px;
         margin-left: 30px;
@@ -246,31 +257,23 @@ header {
     }
 
     .logoimage {
-        width: 200px;
+        width: 150px;
     }
-
-    .map {
-        width: 450px;
-        height: 150px;
-    }
-
 }
 
 @media (max-width: 576px) {
-    header {
-        height: 40vh;
-    }
+  
 
     .title {
         font-size: 1.5rem;
     }
 
     .subtitle {
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     .textbutton {
-        font-size: 0.7rem
+        font-size: 0.7rem;
     }
 
     .calendarimage {
@@ -293,11 +296,11 @@ header {
     }
 
     .text_footer {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
+    }
 
-        font-family: "Outfit", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
+    .text_footer2 {
+        font-size: 0.9rem;
     }
 
     .checkimage {
@@ -306,12 +309,6 @@ header {
     }
 
     .logoimage {
-        width: 100px;
+        width: 130px;
     }
-
-    .map {
-        width: 300px;
-        height: 100px;
-    }
-
 }
